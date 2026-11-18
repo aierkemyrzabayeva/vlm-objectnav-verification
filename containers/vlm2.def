@@ -1,0 +1,9 @@
+# Layer 2 of the VLM container: PyTorch 2.5.1 and torchvision 0.20.1 (CUDA 12.1) on top of vlm.sif
+# (vlm.sif: base image with Transformers and the web server packages, built from vlm.def; see README.md in this directory).
+# Build (from the directory that contains vlm.sif):  apptainer build --fakeroot vlm2.sif vlm2.def
+Bootstrap: localimage
+From: vlm.sif
+
+%post
+    pip install --no-cache-dir torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
+    python -c "import torch, torchvision, transformers; print('VERSIONS', torch.__version__, torchvision.__version__, transformers.__version__)"

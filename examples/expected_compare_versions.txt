@@ -1,0 +1,15 @@
+paired missions: 12 (A only: 0, B only: 0)
+
+== scenario S1: 6 paired episodes
+    SR                      decision accuracy        VLM calls  path m   sim s
+A    6/6  = 1.00 [0.61,1.00] 6/6  = 1.00 [0.61,1.00]       2.0     4.1      26
+B    5/6  = 0.83 [0.44,0.97] 5/6  = 0.83 [0.44,0.97]       1.7     3.5      73
+  SR       : A only 1, B only 0, exact McNemar p = 1.000
+  decision : A only 1, B only 0, exact McNemar p = 1.000
+
+== scenario S2: 6 paired episodes
+    SR                      decision accuracy        VLM calls  path m   sim s
+A    4/6  = 0.67 [0.30,0.90] 4/6  = 0.67 [0.30,0.90]       7.2    17.7     103
+B    1/6  = 0.17 [0.03,0.56] 1/6  = 0.17 [0.03,0.56]      14.0    29.5     144
+  SR       : A only 3, B only 0, exact McNemar p = 0.250
+  decision : A only 3, B only 0, exact McNemar p = 0.250

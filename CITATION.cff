@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or the data, please cite the paper (and also the original system, Sensors 2026, 26(15), 4661)."
+title: "Verification and recovery for memory-based object navigation with a small VLM and a learned controller: code and data"
+authors:
+  - family-names: "Myrzabayeva"
+    given-names: "Aierke"
+    # TODO: add the co-authors, e-mail and ORCID
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-17"   # TODO: update on release
+repository-code: "TODO: repository URL"
+# doi: add here if the release is archived later (for example on Zenodo through the GitHub integration)
+preferred-citation:
+  type: article
+  title: "Verification and Recovery for Memory-Based Object Navigation with a Small VLM and a Learned Controller"
+  authors:
+    - family-names: "Myrzabayeva"
+      given-names: "Aierke"
+  journal: "TODO: IEEE Access (volume, pages, DOI after acceptance)"
+  year: 2026

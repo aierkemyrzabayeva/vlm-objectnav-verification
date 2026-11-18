@@ -1,0 +1,39 @@
+# Files of code/ relative to the code that produced the results.
+# identical = byte-identical; paths = only path constants (read from VLMNAV_BASE) and the Slurm account differ; new = file written for the release (no counterpart in the experiment code).
+
+identical  ef38375c2d414965e1768b58d0e125c2b8851f6911b72d400c8177f08f38452c  analyze_exp.py
+identical  3e0a5ea7b22a4fb2d5be21e51ab0cb08821393566ff9b19095ce5334b636883c  analyze_verif.py
+identical  ec47fb6b560e0180cb740f4a3989da8a8786d5095398a4100225fd15d6cdcba6  compare_versions.py
+identical  153504f55443f1cf3a29ef7ec4de87e527e29a5930293bb377b8047304a3ae14  eval_moondream.py
+identical  6807d8814647c1c547dc43099a0a84c03c172ae7b1a4a1573c5e713fbc69f7c2  gen_world.py
+identical  c649c6b28ab31d7627a2ef0b3f41b874323aada3cdc19cb0b2664a7608ceae7d  grab_frames.py
+identical  b832d35261958f376c63e10603b789844bba968d91db087ed6a142085ad3353a  instance_memory.py
+identical  5eaa097e60db3e5005ee5999023295386429a36dc02f82068c2abbeabd9d3b65  legs_table.py
+identical  1fad919a8ed0bf7540b4ffa089a3b19a53144da131e0be4edc0fcff421acdbd3  make_env_ours.py
+identical  e44ef4a5d8aaa0e42976e8212647370df8795f027395ac0097a8ad47e01e8f96  policy_io.py
+identical  aff546d3480ba7dce677fc7402a75cb79696bde4ed9be1b6e29eecb9b5bff734  sim_env.py
+identical  5718245b97292b0c4e51fc29c8806b1464a451789e1b817f6d0f2d0a8d7d4ed4  test_logic.py
+identical  08ca004872a545f0c700328d34a46fa5af4d2bc54fc357a92c19a7a18de87563  verify_repair.py
+identical  daaa79f5df5e7d0ba7057195c51ceb0484fe58fae1164172dd130098fb49b5f0  vlm_models.py
+identical  315ff17cb31324e89fb2e4360df8c3321f0894de4589f06f89f5a76469068be5  vlm_probe.py
+identical  12682194e110680179f80ae97e769dc73a85274ea632406b450ba8a7c4d65672  vlm_verify_server.py
+paths      8649286818af5720db863748b0a56bff9dd7a7f2025971cd3b6e778f770b0ad4  analyze_failures.py
+paths      ad2e1eb10c05648d0f80f45f76222ec61a165ab41bdbb4838b53f9ae22cea29b  collect_verif.py
+paths      aa6f89f5f7fa8adf4a80b4f068e3defcc32eef89b7cab06a274b158b2838c50b  collect_verif.sh
+paths      2a0aa94d038e04ae833203e61590f5d0d20c1c788a5f1ccde36770df97fca2f9  ctrl_test.sh
+paths      ee29d86813e3cffe414b2b0530e33b00c57f98d45e0f20cc9e8ae179154d33d7  diag_turn.py
+paths      073084919c93abb5c3a371f56d0bbcf1c449c1dc3fa854233a4bd92fd876e637  diag_turn.sh
+paths      834bcd2659f4a0f07fb4178d050b608631630995ab6652fc7716c13a565fdc3d  download_models.sh
+paths      fc3fe40033b0dd19d395d875a089e322bd1dec17e2d743e9bd1bbdff45eac1bf  eval_moondream.sh
+paths      31230a7ed84ebe2682d2e8a47b66f8b3d283114b898fcd0a541f68c2daa76cda  eval_vlm.sh
+paths      488d7002a9f2809acdad319659a864e76c73769d225925454a360695091708a1  exp.sh
+paths      542c3c797fee6deb13a1ec86c9b54e4d0a9ee25ac57431ce6e61bd7cab0b48b3  inner_collect.sh
+paths      2d86e360e9b9a6865bb9173207dfd3c00f9fc27d5539813cb7587d54aac02b34  inner_ctrl.sh
+paths      02862422a98555b5a12a3fcbce3e5652702a599bb820950c3c81a08676351602  inner_diag.sh
+paths      28d9f1077ece408859632335cf3f598dc047e0bee03570c18acfb600b8a18bf2  inner_exp.sh
+paths      4a27b1bed0736b7410616cfb21e2522de8a4633c88b8d9a70e53aa22ebdcc3f9  inner_smoke3.sh
+paths      ca6f2ceed9e7d6a36995845976fc5d856cf63b3d4cb83f6699d7bfb78359848a  run_experiment.py
+paths      d12a74032e82ca751e0265c9f3fb6958f3d9f00ac062e1e7fe91abf9678b5864  run_vlm_probe.sh
+paths      1ab037a31320b2e024a5df957021417f627ae6ccdabffd41107f637007c59471  smoke3.sh
+paths      3e58a9b4da9db89093e9f0b865051c4f3ba01d3187a582bcecc8720453dbee6b  test_controller.py
+new        872b08a8b858c92d6ecd8ab43def0b7c1984773909f469c457d5e92d2193b4be  make_launch_ours.py

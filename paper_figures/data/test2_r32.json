@@ -1,0 +1,143 @@
+{
+  "name": "test2_r32",
+  "seed": 32,
+  "room_size": 9.0,
+  "start": [
+    0.0,
+    0.0
+  ],
+  "params": {
+    "seed": 32,
+    "catalog": "reliable",
+    "room": 9.0,
+    "n_classes": 8,
+    "n_dup": 2,
+    "n_moves": 2,
+    "dup_min_sep": 3.0,
+    "min_move": 3.0
+  },
+  "instances": [
+    {
+      "id": "cardboard_box_0",
+      "model": "cardboard_box",
+      "class": "cardboard box",
+      "x": 0.063,
+      "y": 2.436,
+      "yaw": 3.285,
+      "radius": 0.35
+    },
+    {
+      "id": "table_0",
+      "model": "table",
+      "class": "table",
+      "x": 2.846,
+      "y": 2.444,
+      "yaw": 2.331,
+      "radius": 0.7
+    },
+    {
+      "id": "table_1",
+      "model": "table",
+      "class": "table",
+      "x": -3.195,
+      "y": 1.634,
+      "yaw": 0.794,
+      "radius": 0.7
+    },
+    {
+      "id": "postbox_0",
+      "model": "postbox",
+      "class": "postbox",
+      "x": 3.174,
+      "y": -2.088,
+      "yaw": 0.512,
+      "radius": 0.4
+    },
+    {
+      "id": "postbox_1",
+      "model": "postbox",
+      "class": "postbox",
+      "x": -2.717,
+      "y": -2.383,
+      "yaw": 0.126,
+      "radius": 0.4
+    },
+    {
+      "id": "fire_hydrant_0",
+      "model": "fire_hydrant",
+      "class": "fire hydrant",
+      "x": -1.058,
+      "y": -2.424,
+      "yaw": 1.946,
+      "radius": 0.3
+    },
+    {
+      "id": "person_standing_0",
+      "model": "person_standing",
+      "class": "person",
+      "x": 1.918,
+      "y": 0.618,
+      "yaw": 1.441,
+      "radius": 0.35
+    },
+    {
+      "id": "first_2015_trash_can_0",
+      "model": "first_2015_trash_can",
+      "class": "trash can",
+      "x": 1.148,
+      "y": -3.207,
+      "yaw": 1.898,
+      "radius": 0.35
+    },
+    {
+      "id": "cabinet_0",
+      "model": "cabinet",
+      "class": "cabinet",
+      "x": -1.271,
+      "y": 3.223,
+      "yaw": 5.797,
+      "radius": 0.45
+    },
+    {
+      "id": "oak_tree_0",
+      "model": "oak_tree",
+      "class": "tree",
+      "x": -3.056,
+      "y": -0.483,
+      "yaw": 2.746,
+      "radius": 0.6
+    }
+  ],
+  "duplicate_models": [
+    "postbox",
+    "table"
+  ],
+  "relocations": [
+    {
+      "id": "cabinet_0",
+      "model": "cabinet",
+      "class": "cabinet",
+      "from": [
+        -1.271,
+        3.223
+      ],
+      "to": [
+        1.41,
+        -1.646
+      ]
+    },
+    {
+      "id": "first_2015_trash_can_0",
+      "model": "first_2015_trash_can",
+      "class": "trash can",
+      "from": [
+        1.148,
+        -3.207
+      ],
+      "to": [
+        -2.904,
+        3.43
+      ]
+    }
+  ]
+}

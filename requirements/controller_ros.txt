@@ -1,0 +1,12 @@
+# versions measured inside ros_nav2.sif
+numpy==1.23.5
+torch==2.4.1            # CUDA 12.1 wheels
+stable-baselines3==2.4.1
+gymnasium==1.0.0
+gym==0.26.2
+shimmy
+cloudpickle==3.1.1
+opencv (cv2)==4.2.0     # system package
+requests==2.32.4
+Pillow==7.0.0           # system package
+# apt (ROS Noetic): ros-noetic-realsense2-description ros-noetic-xacro ros-noetic-joint-state-publisher ros-noetic-robot-state-publisher (layer 2); see containers/ros_nav.def for layer 1

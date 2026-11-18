@@ -1,0 +1,23 @@
+# Layer 1 of the ROS container: ROS Noetic packages, Xvfb/Mesa for headless Gazebo, and the first set of Python packages, on top of ros_noetic.sif
+# (ros_noetic.sif is the base ROS Noetic image; see README.md in this directory). The packages of layer 2 (ros_nav2.def) replace the older
+# gym / stable-baselines3 / torch versions installed here; the final versions are in ../requirements/.
+# The openai package is installed only because the original system imports it; no API key is used or needed by any experiment.
+Bootstrap: localimage
+From: ros_noetic.sif
+
+%post
+    echo 'APT::Sandbox::User "root";' > /etc/apt/apt.conf.d/99sandbox
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update
+    apt-get install -y --no-install-recommends \
+        ros-noetic-navigation ros-noetic-slam-gmapping ros-noetic-explore-lite \
+        ros-noetic-teb-local-planner ros-noetic-velodyne-simulator \
+        ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control \
+        ros-noetic-robot-state-publisher ros-noetic-tf2-ros \
+        python3-pip python3-catkin-tools xvfb mesa-utils libgl1-mesa-dri
+    pip3 install --no-cache-dir "setuptools<66" "wheel<0.40"
+    pip3 install --no-cache-dir "numpy==1.23.5"
+    pip3 install --no-cache-dir torch==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+    pip3 install --no-cache-dir gym==0.21.0 stable-baselines3==1.8.0 \
+        pandas==2.0.3 openpyxl requests scipy matplotlib scikit-learn squaternion openai==1.30.5
+    rm -rf /var/lib/apt/lists/*

@@ -1,0 +1,5 @@
+# the analysis scripts, the world generator and test_logic.py use only the Python standard library
+# paper_figures/ additionally needs:
+matplotlib
+Pillow
+pandas

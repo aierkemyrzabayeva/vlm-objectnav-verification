@@ -1,0 +1,12 @@
+
+===== scenario S1
+cond     n  SR (primary)          raw near              decision ok            VLM calls  path m   sim s
+FULL     6    6/6   1.00 [0.61,1.00]  6/6   1.00 [0.61,1.00]  6/6   1.00 [0.61,1.00]       2.0     4.1      26
+termination reasons: FULL: {'verified': 6}
+paired comparisons (same episodes), metric SR / decision_ok:
+
+===== scenario S2
+cond     n  SR (primary)          raw near              decision ok            VLM calls  path m   sim s
+FULL     6    4/6   0.67 [0.30,0.90]  4/6   0.67 [0.30,0.90]  4/6   0.67 [0.30,0.90]       7.2    17.7     103
+termination reasons: FULL: {'found_by_search': 6}
+paired comparisons (same episodes), metric SR / decision_ok:

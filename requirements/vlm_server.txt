@@ -1,0 +1,8 @@
+# versions measured inside vlm2.sif
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+transformers==4.46.3
+fastapi==0.162.0
+uvicorn==0.54.0
+Pillow==10.2.0
+# not pinned in vlm.def: accelerate einops python-multipart requests pyvips pyvips-binary (libvips42 from apt)

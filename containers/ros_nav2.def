@@ -1,0 +1,15 @@
+# Layer 2 of the ROS container: adds camera/robot description packages and the Python packages of the controller on top of ros_nav.sif
+# (ros_nav.sif: ROS Noetic base image built from ros_nav.def; see README.md in this directory).
+# Build (from the directory that contains ros_nav.sif):  apptainer build --fakeroot --ignore-fakeroot-command ros_nav2.sif ros_nav2.def
+Bootstrap: localimage
+From: ros_nav.sif
+
+%post
+    echo 'APT::Sandbox::User "root";' > /etc/apt/apt.conf.d/99sandbox
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update
+    apt-get install -y --no-install-recommends ros-noetic-realsense2-description ros-noetic-xacro ros-noetic-joint-state-publisher ros-noetic-robot-state-publisher
+    pip3 install --no-cache-dir torch==2.4.1 --index-url https://download.pytorch.org/whl/cu121
+    pip3 install --no-cache-dir "numpy==1.23.5" "stable-baselines3==2.4.1" "gymnasium==1.0.0" "gym==0.26.2" shimmy "cloudpickle==3.1.1"
+    python3 -c "import stable_baselines3, gymnasium, gym, torch, numpy; print('VERSIONS', stable_baselines3.__version__, gymnasium.__version__, gym.__version__, torch.__version__, numpy.__version__)"
+    rm -rf /var/lib/apt/lists/*

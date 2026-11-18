@@ -1,0 +1,143 @@
+{
+  "name": "test2_r51",
+  "seed": 51,
+  "room_size": 9.0,
+  "start": [
+    0.0,
+    0.0
+  ],
+  "params": {
+    "seed": 51,
+    "catalog": "reliable",
+    "room": 9.0,
+    "n_classes": 8,
+    "n_dup": 2,
+    "n_moves": 2,
+    "dup_min_sep": 3.0,
+    "min_move": 3.0
+  },
+  "instances": [
+    {
+      "id": "cabinet_0",
+      "model": "cabinet",
+      "class": "cabinet",
+      "x": 2.831,
+      "y": -3.016,
+      "yaw": 1.914,
+      "radius": 0.45
+    },
+    {
+      "id": "person_standing_0",
+      "model": "person_standing",
+      "class": "person",
+      "x": 1.622,
+      "y": 2.977,
+      "yaw": 0.244,
+      "radius": 0.35
+    },
+    {
+      "id": "oak_tree_0",
+      "model": "oak_tree",
+      "class": "tree",
+      "x": 2.58,
+      "y": -0.239,
+      "yaw": 4.036,
+      "radius": 0.6
+    },
+    {
+      "id": "postbox_0",
+      "model": "postbox",
+      "class": "postbox",
+      "x": -2.87,
+      "y": 1.433,
+      "yaw": 4.435,
+      "radius": 0.4
+    },
+    {
+      "id": "fire_hydrant_0",
+      "model": "fire_hydrant",
+      "class": "fire hydrant",
+      "x": 2.949,
+      "y": 1.363,
+      "yaw": 4.417,
+      "radius": 0.3
+    },
+    {
+      "id": "fire_hydrant_1",
+      "model": "fire_hydrant",
+      "class": "fire hydrant",
+      "x": 0.421,
+      "y": -2.441,
+      "yaw": 3.063,
+      "radius": 0.3
+    },
+    {
+      "id": "first_2015_trash_can_0",
+      "model": "first_2015_trash_can",
+      "class": "trash can",
+      "x": -3.418,
+      "y": -1.929,
+      "yaw": 0.428,
+      "radius": 0.35
+    },
+    {
+      "id": "first_2015_trash_can_1",
+      "model": "first_2015_trash_can",
+      "class": "trash can",
+      "x": -1.909,
+      "y": 2.8,
+      "yaw": 1.737,
+      "radius": 0.35
+    },
+    {
+      "id": "cardboard_box_0",
+      "model": "cardboard_box",
+      "class": "cardboard box",
+      "x": -0.125,
+      "y": 2.306,
+      "yaw": 0.424,
+      "radius": 0.35
+    },
+    {
+      "id": "table_0",
+      "model": "table",
+      "class": "table",
+      "x": -1.723,
+      "y": -2.755,
+      "yaw": 2.01,
+      "radius": 0.7
+    }
+  ],
+  "duplicate_models": [
+    "fire_hydrant",
+    "first_2015_trash_can"
+  ],
+  "relocations": [
+    {
+      "id": "oak_tree_0",
+      "model": "oak_tree",
+      "class": "tree",
+      "from": [
+        2.58,
+        -0.239
+      ],
+      "to": [
+        -2.817,
+        -0.309
+      ]
+    },
+    {
+      "id": "postbox_0",
+      "model": "postbox",
+      "class": "postbox",
+      "from": [
+        -2.87,
+        1.433
+      ],
+      "to": [
+        1.773,
+        -1.831
+      ]
+    }
+  ]
+}

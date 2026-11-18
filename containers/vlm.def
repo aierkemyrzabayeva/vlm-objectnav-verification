@@ -1,0 +1,9 @@
+# Base of the VLM container: PyTorch 2.4.1 (CUDA 12.1) from the public Docker image, Transformers 4.46.3 and the web-server packages.
+# Layer 2 (vlm2.def) upgrades PyTorch to 2.5.1.
+Bootstrap: docker
+From: pytorch/pytorch:2.4.1-cuda12.1-cudnn9-runtime
+
+%post
+    apt-get update && apt-get install -y --no-install-recommends libvips42 git && rm -rf /var/lib/apt/lists/*
+    pip install --no-cache-dir "transformers==4.46.3" accelerate einops pillow \
+        fastapi "uvicorn[standard]" python-multipart requests pyvips-binary pyvips
