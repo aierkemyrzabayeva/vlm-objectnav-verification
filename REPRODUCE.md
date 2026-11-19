@@ -39,6 +39,16 @@ them themselves (quote them). The file-name patterns are those of our runs; adju
 | Cross-model study (Qwen2-VL-2B, SmolVLM) | `python3 analyze_verif.py --detail A,D results/xverif_qwen2vl_office_s[1-5].csv` and the same for `xverif_smolvlm_...` | cross-model CSVs |
 | Figures of the paper | `cd paper_figures && python3 make_figures.py out data/test2_r32.json && python3 make_trace.py out && python3 make_frames.py out` | needs matplotlib and Pillow |
 
+## Check the numbers of the paper yourself
+
+`tools/check_paper_numbers.py` recomputes the headline numbers of the paper (navigation results of the revised configuration, the ablation and its confirmation with the paired McNemar tests,
+the single-look table of the verifier) from the released CSV files and compares them with the values printed in the paper. It is an independent implementation (standard library only).
+
+```
+python3 tools/check_paper_numbers.py path/to/data_release/results
+```
+It prints one line per check (`OK` or `DIFF`) and a summary such as `107 of 107 checks agree with the paper`. `tools/selftest_check_paper_numbers.py` tests the checker on synthetic data.
+
 ## Level 2: re-running the simulations (Slurm cluster with Apptainer, NVIDIA GPU)
 
 You need the two containers, the workspace and the object models; none of the third-party parts is in this repository (see `THIRD_PARTY.md`), but `containers/` has the definition files and the scripts

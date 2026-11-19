@@ -14,6 +14,7 @@ n=$(python3 test_logic.py ./gen_world.py 2>&1 | grep -c '^PASS')
 for c in "analyze_exp.py --selftest" "analyze_verif.py --selftest" "compare_versions.py --selftest" "collect_verif.py --selftest"; do
   python3 $c 2>&1 | grep -q SELFTEST_OK && ok "$c" || bad "$c"
 done
+python3 ../tools/selftest_check_paper_numbers.py 2>&1 | grep -q SELFTEST_OK && ok "check_paper_numbers.py (synthetic data: accepts matching numbers, detects a change)" || bad "check_paper_numbers.py selftest"
 python3 make_launch_ours.py --selftest 2>&1 | grep -q SELFTEST_OK && ok "make_launch_ours.py --selftest" || bad "make_launch_ours.py --selftest"
 python3 test_controller.py --selftest 2>&1 | grep -q SELFTEST_OK && ok "test_controller.py --selftest" || echo "SKIP  test_controller.py --selftest (needs numpy)"
 
