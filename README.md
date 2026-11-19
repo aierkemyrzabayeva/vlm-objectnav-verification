@@ -1,8 +1,8 @@
-# Verification and recovery for memory-based object navigation (small VLM + learned controller)
+# Verification and recovery for memory-based object-goal navigation (small vision-language model + learned controller)
 
 Code, world generator, experimental protocol and analysis scripts for the paper
 
-> *Verification and Recovery for Memory-Based Object Navigation with a Small VLM and a Learned Controller*
+> *Verification and Recovery for Memory-Based Object-Goal Navigation with a Small Vision-Language Model and a Learned Controller*
 > (manuscript under review; the citation will be added here, see `CITATION.cff`).
 
 The study measures how reliable a small vision-language model (Moondream2, with Qwen2-VL-2B and SmolVLM for comparison) is as a
