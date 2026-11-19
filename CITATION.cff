@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software or the data, please cite the paper (and also the original system, Sensors 2026, 26(15), 4661)."
-title: "Verification and recovery for memory-based object navigation with a small VLM and a learned controller: code and data"
+title: "Verification and recovery for memory-based object-goal navigation with a small vision-language model and a learned controller: code and data"
 authors:
   - family-names: "Myrzabayeva"
     given-names: "Aierke"
@@ -12,7 +12,7 @@ repository-code: "https://github.com/aierkemyrzabayeva/vlm-objectnav-verificatio
 # doi: add here if the release is archived later (for example on Zenodo through the GitHub integration)
 preferred-citation:
   type: article
-  title: "Verification and Recovery for Memory-Based Object Navigation with a Small VLM and a Learned Controller"
+  title: "Verification and Recovery for Memory-Based Object-Goal Navigation with a Small Vision-Language Model and a Learned Controller"
   authors:
     - family-names: "Myrzabayeva"
       given-names: "Aierke"
